@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+
+sudo service cassandra stop
+cd /var/log/cassandra
+sudo rm -rf *
+cd /var/lib/cassandra
+sudo rm -rf *
+cd $HOME/go/src/github.com/Novetta/VideoEnterprise/videx2/dev
+rm executor.cfg
+sudo service cassandra start
+sleep 15
+echo "Waiting for cassandra to start...."
+bash bootstrap.sh
+
