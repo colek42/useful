@@ -6,7 +6,7 @@ cd /var/log/cassandra
 sudo rm -rf *
 cd /var/lib/cassandra
 sudo rm -rf *
-cd $HOME/go/src/github.com/Novetta/VideoEnterprise/videx2/dev
+cd $GOHOME/src/github.com/Novetta/VideoEnterprise/videx2/dev
 rm executor.cfg
 sudo service cassandra start
 sleep 15
