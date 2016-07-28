@@ -1,0 +1,4 @@
+gtf 2048 1152 59.9
+xrandr --newmode "2048x1152_59.90"  197.64  2048 2184 2408 2768  1152 1153 1156 1192  -HSync +Vsync
+xrandr --addmode Virtual1 2048x1152_59.90
+xrandr --output Virtual1 --mode 2048x1152_59.90
